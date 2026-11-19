@@ -41,6 +41,7 @@ while (true)
 
     if (!int.TryParse(Console.ReadLine(), out int choice) || choice == 0) break;
     if (choice >= 1 && choice <= demos.Length) RunDemo(choice - 1);
+    Console.ReadLine();
 }
 
 void RunDemo(int index)
